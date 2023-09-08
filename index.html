@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
     <title>Bored Board</title>
 </head>
 <body>
-    <header>BoredBoard</header>
+    <header>Bored Board</header>
     <main>
-        <div id="options"></div>
+        <div id="options">
+            <button>Color</button>
+            <button>Eraser</button>
+            <button>Color Spotter</button>
+            <button>Reset</button>
+        </div>
         <div id="board"></div>
+        <div>
+            <label for="colorPicker">Select a color:</label>
+            <input type="color" id="colorPicker">
+            <div id="colorPreview"></div>
+
+        </div>
     </main>
     <footer></footer>
 </body>

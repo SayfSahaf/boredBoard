@@ -1,9 +1,40 @@
+*{
+    background-color: #daeff6;
+}
+
+header {
+    font-family: 'Oi', cursive;
+    font-size: 2.3rem;
+    color: #b22a4c;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main{
+    border: solid black 1px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid black 1px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
 
 #board {
     display: grid;
     border: solid black 1px;
     width: 608px;
     height: 608px;
+    justify-self: flex-end;
 }
 
 
