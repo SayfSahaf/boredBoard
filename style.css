@@ -13,11 +13,12 @@ header {
 }
 
 main{
-    border: solid black 1px;
     padding: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-grow: 1;
+    align-items: center;
 }
 
 #options {
@@ -26,10 +27,11 @@ main{
     justify-content: space-evenly;
     align-items: center;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.2rem;
     margin-right: auto;
     margin-left: auto;
     width: 220px;
+    height: 550px;
     background-color: #efe1b9;
     box-shadow: 0px 0px 6px grey;
 }
@@ -85,6 +87,21 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: large;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    color: #b22a4c;
+    align-items: center;
+}
 
-main {
+footer > #remark {
+    font-family: 'Oi', cursive;
+    font-size: small;
+}
+
+footer > #link > a {
+    color: #b22a4c;
+    font-size: x-large;
 }
