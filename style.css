@@ -1,0 +1,16 @@
+
+#board {
+    display: grid;
+    border: solid black 1px;
+    width: 608px;
+    height: 608px;
+}
+
+
+.box {
+    
+}
+
+
+main {
+}
