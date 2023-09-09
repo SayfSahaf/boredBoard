@@ -3,7 +3,23 @@ const board = document.getElementById("board");
 const sValue = document.getElementById('sliderValue');
 const cPicker = document.getElementById('colorPicker')
 
+//buttons
+const pen = document.getElementById('pen');
+const eraser = document.getElementById('eraser')
+const reset = document.getElementById('reset')
+
 let currentColor = '#000000'
+pen.addEventListener('click', function() {
+    currentColor = cPicker.value;
+})
+
+eraser.addEventListener('click', function() {
+    currentColor = '#ffffff'
+})
+
+reset.addEventListener('click', function() {
+    drawBoard();
+})
 
 cPicker.addEventListener('input', function() {
     currentColor = cPicker.value;
