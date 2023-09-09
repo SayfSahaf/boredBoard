@@ -1,8 +1,17 @@
 const slider = document.getElementById('slider')
 const board = document.getElementById("board");
 const sValue = document.getElementById('sliderValue');
+const cPicker = document.getElementById('colorPicker')
 
+let currentColor = '#000000'
 
+cPicker.addEventListener('input', function() {
+    currentColor = cPicker.value;
+})
+
+function changeColor() {
+    this.style.backgroundColor = currentColor;
+}
 
 function drawBoard() {
     let boxCount = slider.value;
@@ -17,6 +26,7 @@ function drawBoard() {
         box.style.height = `${boxSize}px`
         box.style.width = `${boxSize}px`
         box.classList.add("box")
+        box.addEventListener('click', changeColor)
         board.appendChild(box)
     }
 
