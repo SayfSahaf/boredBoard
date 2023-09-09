@@ -87,6 +87,13 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: large;
 }
 
+#sliderValue {
+    background-color: #e39e87;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
 footer {
     display: flex;
     flex-direction: row;
