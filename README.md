@@ -1,5 +1,4 @@
 # boredBoard
-[Link to the webpage](https://sayfsahaf.github.io/boredBoard/)
 
 I created this webpage to practice Javascript and DOM manipulations.
 
